@@ -1,5 +1,40 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@font-face {
+  font-family: "Univers Next W01";
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/97c0f83d-39ac-412b-9d8a-d98208c0ce8d.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/fc09acb4-f628-4ba0-b648-d2ca30265b20.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/3cb4004c-2eea-45d4-a0b5-7af6f817c451.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/4d6ce461-aa11-472f-af6d-7466479534e1.svg#4d6ce461-aa11-472f-af6d-7466479534e1") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Univers Next W01";
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8c7fe4ab-375c-4be5-bba8-2c4d83ac807a.eot?#iefix");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8c7fe4ab-375c-4be5-bba8-2c4d83ac807a.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/b37595d7-d2c2-465d-81bd-f5bc289fc565.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/88e0673d-3db0-4931-ae03-8a4a6eb1bbe6.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/957860fc-f472-47cc-afcb-6305b3455894.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/739dd5f9-b50a-4700-bb3d-77ab01a96697.svg#739dd5f9-b50a-4700-bb3d-77ab01a96697") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Univers Next W01";
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/07e1641d-6281-4461-827c-f3940fa0d811.eot?#iefix");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/07e1641d-6281-4461-827c-f3940fa0d811.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/e8921ecc-af32-4c3d-9636-dd82b4225e40.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/20f7bd07-85c9-4687-ab29-0b87584842ff.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/2df6d56e-7f31-4175-88df-47d374d8bb60.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/9ca9081d-10de-4848-b53a-40ceaa62b2b2.svg#9ca9081d-10de-4848-b53a-40ceaa62b2b2") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Univers Next W01";
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7af2167c-efe7-44d7-b2e1-6fdeeaa927c9.eot?#iefix");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7af2167c-efe7-44d7-b2e1-6fdeeaa927c9.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8e26dc86-9708-4a36-89fb-a4416a5b9f5c.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/c3b66848-d40c-458a-a977-7398cb9c1c82.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/ea870cc2-efce-428c-af01-d00573ee4b0e.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/650a08a0-413e-47e4-a083-617a54b35ab0.svg#650a08a0-413e-47e4-a083-617a54b35ab0") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Univers Next W01";
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/365d926e-03e5-4406-a883-fd0f9e462339.eot?#iefix");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/365d926e-03e5-4406-a883-fd0f9e462339.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/043eef6e-81ef-483c-831c-7bfd6628554b.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7b11912a-986d-462e-b88a-4a1758eb23f1.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/545a8d94-3389-418c-9b0a-bfc16d1f8285.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/f499fe08-3b8d-4033-a5cf-9089676d1ca5.svg#f499fe08-3b8d-4033-a5cf-9089676d1ca5") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
 /*
 	Public User Page Template
     Flatiron Institute  
@@ -96,7 +131,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 body, input, select, textarea {
   color: #a2a2a2;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Univers Next W01", Helvetica, Ariel, sans-serif;
   font-size: 16pt;
   font-weight: 400;
   line-height: 1.75em;
@@ -2108,9 +2143,8 @@ input[type=button]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background-color: #1f1815;
+  background-color: #537eba;
   background-attachment: scroll, scroll;
-  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
   background-size: auto, 150%;
