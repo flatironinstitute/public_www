@@ -130,10 +130,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 body, input, select, textarea {
-  color: #a2a2a2;
+  color: #666;
   font-family: "Univers Next W01", Helvetica, Ariel, sans-serif;
   font-size: 16pt;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75em;
 }
 
@@ -153,8 +153,8 @@ a:hover {
 }
 
 strong, b {
-  color: #787878;
-  font-weight: 400;
+  color: #1a1a1a;
+  font-weight: 300;
 }
 
 em, i {
@@ -166,8 +166,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #787878;
-  font-weight: 400;
+  color: #1a1a1a;
+  font-weight: 300;
   line-height: 1em;
   margin: 0 0 1em 0;
 }
@@ -1421,7 +1421,7 @@ section.special, article.special {
 }
 
 header p {
-  color: #b2b2b2;
+  color: #8f8f8f;
   position: relative;
   margin: 0 0 1.5em 0;
 }
@@ -1452,10 +1452,10 @@ form {
 }
 
 label {
-  color: #787878;
+  color: #1a1a1a;
   display: block;
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 1em 0;
 }
 
@@ -1503,7 +1503,7 @@ select {
   text-overflow: ellipsis;
 }
 select option {
-  color: #787878;
+  color: #1a1a1a;
   background: #fff;
 }
 select:focus::-ms-value {
@@ -1540,11 +1540,11 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  color: #a2a2a2;
+  color: #666;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   padding-left: 2.4em;
   padding-right: 0.75em;
   position: relative;
@@ -1580,8 +1580,8 @@ input[type=radio] + label:before {
 }
 input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
-  background: #787878;
-  border-color: #787878;
+  background: #1a1a1a;
+  border-color: #1a1a1a;
   color: #fff;
   content: "\f00c";
 }
@@ -1599,22 +1599,22 @@ input[type=radio] + label:before {
 }
 
 ::-webkit-input-placeholder {
-  color: #b2b2b2 !important;
+  color: #8f8f8f !important;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  color: #b2b2b2 !important;
+  color: #8f8f8f !important;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #b2b2b2 !important;
+  color: #8f8f8f !important;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #b2b2b2 !important;
+  color: #8f8f8f !important;
   opacity: 1;
 }
 
@@ -1704,7 +1704,7 @@ input[type=radio] + label:before {
   content: "View";
   display: inline-block;
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: 300;
   left: 50%;
   line-height: 2.25em;
   margin: -1.25em 0 0 -3em;
@@ -1832,7 +1832,7 @@ ul.labeled-icons li a {
   color: inherit;
 }
 ul.labeled-icons li h3 {
-  color: #b2b2b2;
+  color: #8f8f8f;
   left: 0;
   position: absolute;
   text-align: center;
@@ -1965,9 +1965,9 @@ table td {
   padding: 0.75em 0.75em;
 }
 table th {
-  color: #787878;
+  color: #1a1a1a;
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 300;
   padding: 0 0.75em 0.75em 0.75em;
   text-align: left;
 }
@@ -2014,10 +2014,10 @@ input[type=button],
   background-color: transparent;
   border-radius: 0.35em;
   border: solid 3px #efefef;
-  color: #787878 !important;
+  color: #1a1a1a !important;
   cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   height: 3.15em;
   height: calc(2.75em + 6px);
   line-height: 2.75em;
@@ -2104,7 +2104,7 @@ input[type=button]:disabled,
 .button:disabled {
   background-color: #e7e7e7 !important;
   border-color: #e7e7e7 !important;
-  color: #b2b2b2 !important;
+  color: #8f8f8f !important;
   cursor: default;
 }
 
