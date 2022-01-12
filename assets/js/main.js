@@ -1,6 +1,6 @@
 /*
 	Public User Page Template
-    Flatiron Institute  
+    Flatiron Institute
 	flatironinstitute.org
 */
 
@@ -85,24 +85,7 @@
     });
   }
 
-  // Main Sections: Two.
+  // Main Sections: Links.
 
-  // Lightbox gallery.
-  $window.on("load", function () {
-    $("#two").poptrox({
-      caption: function ($a) {
-        return $a.next("h3").text();
-      },
-      overlayColor: "#2c2c2c",
-      overlayOpacity: 0.85,
-      popupCloserText: "",
-      popupLoaderText: "",
-      selector: ".work-item a.image",
-      usePopupCaption: true,
-      usePopupDefaultStyling: false,
-      usePopupEasyClose: false,
-      usePopupNav: true,
-      windowMargin: breakpoints.active("<=small") ? 0 : 50,
-    });
-  });
+
 })(jQuery);

@@ -177,7 +177,7 @@ $size-header-pad: 4em;
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent1, bg) !important;
+			color: _palette(accent1, bg);
 			text-decoration: none;
 		}
 	}
@@ -651,6 +651,14 @@ $size-header-pad: 4em;
 			position: absolute;
 			top: 0;
 			width: 100%;
+		}
+
+		&.logo {
+			background-color: _palette(accent1, bg);
+
+			&:before {
+				background: none;
+			}
 		}
 
 		&.thumb {
@@ -1204,12 +1212,12 @@ $size-header-pad: 4em;
 				}
 
 				#nav > ul li a.active {
-						color: #fff !important;
+						color: _palette(bg);
 						font-weight: bold;
 					}
 
 					#nav > ul li a:hover {
-						color: #fff !important;
+						color: _palette(bg);
 						font-weight: bold;
 						-moz-transition: all 250ms ease-out;
 						-webkit-transition: all 250ms ease-out;
@@ -1233,8 +1241,8 @@ $size-header-pad: 4em;
 				color: _palette(accent2, fg-light);
 			}
 
-			a:hover, a:focus {
-				color: #2c355d !important;
+			a:hover, a:focus, a:active {
+				color: _palette(bg);
 			}
 		}
 
@@ -1263,7 +1271,7 @@ $size-header-pad: 4em;
 				}
 
 				a:hover, a:focus {
-					color: #2c355d !important;
+					color: _palette(fg-bold);
 				}
 			}
 		}
