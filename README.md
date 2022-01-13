@@ -9,14 +9,14 @@ Each user can create their own public, static website, hosted at https://users.f
 Simply create a directory called `public_www` in your Linux home directory (Mac users should first ssh to a Linux host, like "rusty").
 
 ```
-    `mkdir ~/public_www
+    mkdir ~/public_www
 ```
 
-Using your preferred editor, clone this repository into the new directory and move it one level up.  
+Using your preferred editor, clone this repository into the new directory and move it one level up.
 
 ```
-
-~/public_www/index.html.`
+~/public_www/index.html.
+```
 
 This file and any others you place in this directory are automatically published. Symlinks are followed, so if you want to host large datasets, you should place them in /mnt/ceph and symlink from there (both the symlink and the target must be owned by you: you may not host other users' data). Note that any files and directories you wish to be published must be publicly readable (chmod a+rX).
 
@@ -53,4 +53,4 @@ See [LICENSE](LICENSE).
 3. Add Hamberger in Simons style
 4. Social icons smaller
 5. Update footer to mimic landing.
-6. Add CV to About paragraph with html link. 
+6. Add CV to About paragraph with html link.
