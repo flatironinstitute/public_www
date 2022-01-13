@@ -48,9 +48,4 @@ See [LICENSE](LICENSE).
 
 ## Todo:
 
-1. Add Mathjax
-2. Add code example
-3. Add Hamberger in Simons style
-4. Social icons smaller
-5. Update footer to mimic landing.
-6. Add CV to About paragraph with html link.
+1. Add Mathjax?
