@@ -12,10 +12,16 @@ Simply create a directory called `public_www` in your Linux home directory (Mac 
 mkdir ~/public_www
 ```
 
-Using your preferred editor, clone this repository into the new directory and move it one level up. This file and any others you place in this directory are automatically published. Symlinks are followed, so if you want to host large datasets, you should place them in /mnt/ceph and symlink from there (both the symlink and the target must be owned by you: you may not host other users' data).
+Using your preferred editor, clone this repository into the new directory and move it one level up. 
 
-Note that any files and directories you wish to be published must be publicly readable (chmod a+rX).
+```zsh
+git clone <this-repo>
+mv public_www_template/* public_www_template/.* .
+```
 
+This file and any others you place in this directory are automatically published. Symlinks are followed, so if you want to host large datasets, you should place them in /mnt/ceph and symlink from there (both the symlink and the target must be owned by you: you may not host other users' data).
+
+Note: Any files and directories you wish to be published must be publicly readable (chmod a+rX).
 
 ## Template
 
