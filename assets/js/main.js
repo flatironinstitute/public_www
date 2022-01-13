@@ -11,6 +11,8 @@
     $footer = $("#footer"),
     $main = $("#main"),
     $nav = $('#nav'),
+    $year = $('#year'),
+    $center = $('#center'),
     settings = {
       // Parallax background effect?
       parallax: true,
@@ -30,6 +32,10 @@
 
   // Play initial animations on page load.
   $window.on("load", function () {
+    // Add Date
+    const today = new Date();
+    $year.textContent += (`, ${today.getFullYear()}`);
+
     window.setTimeout(function () {
       $body.removeClass("is-preload");
     }, 100);
@@ -120,7 +126,7 @@
 
       // Scrollex.
         $section.scrollex({
-          mode: 'middle',
+          mode: 'default',
           top: '5vh',
           bottom: '5vh',
           initialize: function() {
@@ -151,5 +157,10 @@
 
     });
 
-
+    // Center Color
+    let root = document.documentElement;
+    $center.on("change", function () {
+      $val = $center.find(":selected").val();
+      root.style.setProperty('--accent', $val);
+    });
 })(jQuery);
