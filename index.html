@@ -15,7 +15,7 @@
     <header id="header">
       <div class="inner">
         <!-- TODO: Add a personal photo in /images folder or switch src link to avatar.jpg for a gray circle -->
-        <a href="#" class="image avatar"><img src="images/avatar-default.jpg" alt="" /></a>
+        <a href="#" class="image avatar"><img src="images/avatar-placeholder.jpg" alt="" /></a>
       </div>
       <nav id="nav">
         <ul>
@@ -24,6 +24,7 @@
           <li><a href="#papers" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Papers</a></li>
           <li><a href="#talks" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Talks</a></li>
           <li><a href="#software" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Software</a></li>
+          <li><a href="pdfs/fakecv.pdf" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">CV</a></li>
           <li><a href="#contact" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Contact</a></li>
         </ul>
       </nav>
@@ -42,26 +43,26 @@
       <!-- Two -->
       <section id="research">
         <h2>Research</h2>
-        <!-- TODO: Replace with project info -->
+        <!-- TODO: Replace with project info and choose image type -->
         <div class="row">
           <article class="col-6 col-12-xsmall work-item">
-            <h3>Project Name 1</h3>
+            <h3>Project With Popup Image</h3>
             <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Here is a link</a> to some relevant documentation.</p>
           </article>
           <article class="col-6 col-12-xsmall work-item">
             <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <h3>Project Name 2</h3>
+            <h3>Project Just Thumbnail</h3>
             <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-						<!-- TODO: Replace with relevant images -->
-            <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+            <img  class="image fit" src="images/thumbs/03.jpg" alt="" />
           </article>
           <article class="col-12 col-12-xsmall work-item">
             <h3>Project Without Image</h3>
-            <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <p>Project includes some example Mathjax. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+              $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
           </article>
         </div>
       </section>
@@ -223,5 +224,9 @@
       	el.textContent += (`, ${today.getFullYear()}`);
       })
     </script>
+
+    <!-- TODO: Remove if not using Mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </body>
 </html>
