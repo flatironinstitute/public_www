@@ -64,5 +64,18 @@
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(255,255,255,0.5),
 			border2-bg:		rgba(255,255,255,0.2)
+		),
+
+		accentccb: (
+			bg:				#81ad4a,
+			fg:				mix(#81ad4a, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix(#81ad4a, #ffffff, 40%),
+			border:			rgba(255,255,255,0.25),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2),
+			bg-dark: #2c355d,
 		)
+
 	);

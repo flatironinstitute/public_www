@@ -172,12 +172,12 @@ $size-header-pad: 4em;
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		border-bottom: dotted 1px;
-		color: _palette(accent1, bg);
+		color: _palette(accentccb, bg);
 		text-decoration: none;
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent1, bg);
+			color: _palette(accentccb, bg);
 			text-decoration: none;
 		}
 	}
@@ -448,7 +448,7 @@ $size-header-pad: 4em;
 		}
 
 		&:focus {
-			border-color: _palette(accent1, bg);
+			border-color: _palette(accentccb, bg);
 		}
 	}
 
@@ -537,7 +537,7 @@ $size-header-pad: 4em;
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(accent1, bg);
+				border-color: _palette(accentccb, bg);
 			}
 		}
 	}
@@ -1039,14 +1039,14 @@ $size-header-pad: 4em;
 		white-space: nowrap;
 
 		&:hover {
-			border-color: _palette(accent1, bg);
-			color: _palette(accent1, bg) !important;
+			border-color: _palette(accentccb, bg);
+			color: _palette(accentccb, bg) !important;
 		}
 
 		&:active {
-			background-color: transparentize(_palette(accent1, bg), 0.9);
-			border-color: _palette(accent1, bg);
-			color: _palette(accent1, bg) !important;
+			background-color: transparentize(_palette(accentccb, bg), 0.9);
+			border-color: _palette(accentccb, bg);
+			color: _palette(accentccb, bg) !important;
 		}
 
 		&.icon {
@@ -1080,18 +1080,18 @@ $size-header-pad: 4em;
 		}
 
 		&.primary {
-			background-color: _palette(accent1, bg);
-			border-color: _palette(accent1, bg);
-			color: _palette(accent1, fg-bold) !important;
+			background-color: _palette(accentccb, bg);
+			border-color: _palette(accentccb, bg);
+			color: _palette(accentccb, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent1, bg), 5);
-				border-color: lighten(_palette(accent1, bg), 5);
+				background-color: lighten(_palette(accentccb, bg), 5);
+				border-color: lighten(_palette(accentccb, bg), 5);
 			}
 
 			&:active {
-				background-color: darken(_palette(accent1, bg), 5);
-				border-color: darken(_palette(accent1, bg), 5);
+				background-color: darken(_palette(accentccb, bg), 5);
+				border-color: darken(_palette(accentccb, bg), 5);
 			}
 		}
 
@@ -1132,7 +1132,7 @@ $size-header-pad: 4em;
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accent1, bg);
+		background-color:		_palette(accentccb, bg);
 		background-attachment:	scroll,								scroll;
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;

@@ -37,7 +37,7 @@
           <h2>USER_NAME, Ph.D.</h2>
         </header>
         <!-- TODO: Add your own bio -->
-        <p>I'm a Flatiron Research Fellow in the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Center for Computational Astrophysics</a> at the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> interested in lorem ipsum  dolor sit amet. I received my Ph.D. in Something from the University of Place, where I was advised by professors First Scientist and Second Scientist. My research focuses on consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In the past, I have worked at Accumsan, Lacus vel Facilisis and Volutpat Est. <a href="pdfs/fakecv.pdf">Download my CV.</a></p>
+        <p>I'm a Flatiron Research Fellow in the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a> at the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> interested in lorem ipsum  dolor sit amet. I received my Ph.D. in Something from the University of Place, where I was advised by professors First Scientist and Second Scientist. My research focuses on consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In the past, I have worked at Accumsan, Lacus vel Facilisis and Volutpat Est. <a href="pdfs/fakecv.pdf">Download my CV.</a></p>
       </section>
       <!-- Two -->
       <section id="research">
@@ -186,6 +186,15 @@
 						<a href="https://www.simonsfoundation.org/flatiron/" class="image fit logo">
 							<img src="images/logo.svg" alt="logo" />
 						</a>
+            <!-- Center Select -->
+            <select name="center" id="center">
+              <option value="#537eba">FI</option>
+              <option value="#ce3232">CCA</option>
+              <option value="#81ad4a">CCB</option>
+              <option value="#f6862d">CCM</option>
+              <option value="#007f9d">CCN</option>
+              <option value="#845b8e">CCQ</option>
+            </select>
 					</div>
         </div>
       </section>
@@ -217,11 +226,6 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      window.addEventListener('DOMContentLoaded', () => {
-      	const el = document.getElementById('year');
-      	const today = new Date();
-      	el.textContent += (`, ${today.getFullYear()}`);
-      })
     </script>
 
     <!-- TODO: Remove if not using Mathjax -->
