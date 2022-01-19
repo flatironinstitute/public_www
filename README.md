@@ -6,17 +6,12 @@ Basic templates for individual user pages in your public_www directory at the Fl
 
 Each user can create their own public, static website, hosted at https://users.flatironinstitute.org/~username/. For files on popeye, sites are hosted at https://sdsc-users.flatironinstitute.org/~username/.
 
-Simply create a directory called `public_www` in your Linux home directory (Mac users should first ssh to a Linux host, like "rusty").
+Simply create a directory called `public_www` in your Linux home directory (Mac users should first ssh to a Linux host, like "rusty") and add the contents of this repo.
 
-```zsh
-mkdir ~/public_www
-```
-
-Using your preferred editor, clone this repository into the new directory and move it one level up. 
+Or, git clone this repository into your /mnt/home/<username>.
 
 ```zsh
 git clone <this-repo>
-mv public_www_template/* public_www_template/.* .
 ```
 
 This file and any others you place in this directory are automatically published. Symlinks are followed, so if you want to host large datasets, you should place them in /mnt/ceph and symlink from there (both the symlink and the target must be owned by you: you may not host other users' data).
@@ -100,3 +95,10 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 Apache Version 2.0
 
 See [LICENSE](LICENSE).
+
+
+              <video width="auto" height="auto" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
