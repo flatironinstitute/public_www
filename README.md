@@ -95,7 +95,3 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 Apache Version 2.0
 
 See [LICENSE](LICENSE).
-
-:root {
-  --accent: #537eba;
-}

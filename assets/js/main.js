@@ -1,7 +1,7 @@
 /*
-	Public User Page Template
+  Public User Page Template
     Flatiron Institute
-	flatironinstitute.org
+  flatironinstitute.org
 */
 
 (function ($) {
@@ -66,40 +66,40 @@
 
   // Header.
 
-  		// Title Bar.
-			$titleBar = $(
-				'<div id="titleBar">' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+      // Title Bar.
+      $titleBar = $(
+        '<div id="titleBar">' +
+          '<span class="title">' + $('#logo').html() + '</span>' +
           '<a href="#header" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
+        '</div>'
+      )
+        .appendTo($body);
 
-		// Panel.
-			$header
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'header-visible'
-				});
+    // Panel.
+      $header
+        .panel({
+          delay: 500,
+          hideOnClick: true,
+          hideOnSwipe: true,
+          resetScroll: true,
+          resetForms: true,
+          side: 'right',
+          target: $body,
+          visibleClass: 'header-visible'
+        });
 
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000,
-			offset: function() {
+  // Scrolly.
+    $('.scrolly').scrolly({
+      speed: 1000,
+      offset: function() {
 
-				if (breakpoints.active('<=medium'))
-					return $titleBar.height();
+        if (breakpoints.active('<=medium'))
+          return $titleBar.height();
 
-				return 0;
+        return 0;
 
-			}
-		});
+      }
+    });
 
   // Parallax background.
 
