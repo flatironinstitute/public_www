@@ -9,6 +9,7 @@
     $body = $("body"),
     $header = $("#header"),
     $footer = $("#footer"),
+    $titleBar = null,
     $main = $("#main"),
     $nav = $('#nav'),
     $year = $('#year'),
@@ -64,6 +65,41 @@
   // });
 
   // Header.
+
+  		// Title Bar.
+			$titleBar = $(
+				'<div id="titleBar">' +
+					'<span class="title">' + $('#logo').html() + '</span>' +
+          '<a href="#header" class="toggle"></a>' +
+				'</div>'
+			)
+				.appendTo($body);
+
+		// Panel.
+			$header
+				.panel({
+					delay: 500,
+					hideOnClick: true,
+					hideOnSwipe: true,
+					resetScroll: true,
+					resetForms: true,
+					side: 'right',
+					target: $body,
+					visibleClass: 'header-visible'
+				});
+
+	// Scrolly.
+		$('.scrolly').scrolly({
+			speed: 1000,
+			offset: function() {
+
+				if (breakpoints.active('<=medium'))
+					return $titleBar.height();
+
+				return 0;
+
+			}
+		});
 
   // Parallax background.
 

@@ -51,7 +51,7 @@
 
 // Based on HTML5 UP html5up.net | @ajlkn | CCA 3.0 license (html5up.net/license)
 
-
+$size-header: 23em;
 $size-header-width: 35%;
 $size-header-pad: 4em;
 
@@ -655,8 +655,10 @@ $size-header-pad: 4em;
 		}
 
 		&.logo {
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 8.25em;
+			margin: (_size(element-margin) * 0.5) 0 0 0;
+			width: 15em;
+			display: inline-block;
+    	position: relative;
 
 			&:before {
 				background: none;
@@ -1483,6 +1485,10 @@ $size-header-pad: 4em;
 
 /* Medium */
 
+	#titleBar {
+		display: none;
+	}
+
 	@include breakpoint('<=medium') {
 
 		$size-header-pad: 4em;
@@ -1510,16 +1516,18 @@ $size-header-pad: 4em;
 		/* Header */
 
 			#header {
-				background-attachment:	scroll;
-				background-position:	top left,	center center;
-				background-size:		auto,		cover;
-				left: auto;
+				@include vendor('backface-visibility', 'hidden');
+				@include vendor('transition', ('transform #{_duration(header)} ease'));
 				padding: ($size-header-pad * 1.5) $size-header-pad;
-				position: relative;
+				position: fixed;
 				text-align: center;
-				top: auto;
-				width: 100%;
+				top: 0;
+				width: $size-header;
 				display: block;
+				overflow-y: auto;
+				height: 100%;
+				@include vendor('transform', 'translateX(#{$size-header * -1})');
+				left: 0;
 
 				h1 {
 					font-size: 1.75em;
@@ -1527,10 +1535,6 @@ $size-header-pad: 4em;
 					br {
 						display: inline;
 					}
-				}
-
-				#nav {
-					display: none;
 				}
 
 				.inner .avatar{
@@ -1560,6 +1564,79 @@ $size-header-pad: 4em;
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 				width: 100%;
 			}
+
+					#titleBar {
+						@include vendor('backface-visibility', 'hidden');
+						@include vendor('transition', 'transform #{_duration(header)} ease');
+						display: block;
+						height: 44px;
+						left: 0;
+						position: fixed;
+						top: 0;
+						width: 100%;
+						z-index: _misc(z-index-base) + 1;
+						background: _palette(accent1, bg);
+						color: #fff;
+						min-width: 320px;
+
+						.title {
+							color: #fff;
+							display: block;
+							font-weight: _font(weight-bold);
+							height: 44px;
+							line-height: 44px;
+							padding: 0 1em;
+							width: 100%;
+							text-align: right;
+
+							a {
+								border: 0;
+								text-decoration: none;
+							}
+
+							img {
+								height: 44px;
+							}
+						}
+
+						.toggle {
+							@include icon(false, solid);
+							height: 4em;
+							position: absolute;
+							top: 0;
+							width: 6em;
+							border: 0;
+							outline: 0;
+							left: 0;
+
+							&:before {
+								background: _palette(accent1, bg);
+								color: _palette(accent1, fg-bold);
+								content: '\f0c9';
+								display: block;
+								font-size: 18px;
+								height: 44px;
+								line-height: 44px;
+								position: absolute;
+								text-align: center;
+								top: 0;
+								width: 64px;
+								left: 0;
+							}
+						}
+					}
+
+					body {
+						&.header-visible {
+							#titleBar {
+									@include vendor('transform', 'translateX(#{$size-header})');
+							}
+
+							#header {
+								@include vendor('transform', 'translateX(0)');
+							}
+						}
+					}
 
 	}
 
@@ -1632,7 +1709,7 @@ $size-header-pad: 4em;
 		/* Main */
 
 			#main {
-				padding: ($size-header-pad * 1.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
+				padding: ($size-header-pad * 2.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
 
 				> section {
 					margin: ($size-header-pad * 1.5) 0 0 0;
