@@ -40,6 +40,11 @@
     Flatiron Institute
 	flatironinstitute.org
 */
+
+:root {
+  --accent: var(--accent);
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -143,12 +148,12 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #537eba;
+  color: var(--accent);
   text-decoration: none;
 }
 a:hover {
   border-bottom-color: transparent;
-  color: #537eba;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -1444,7 +1449,7 @@ header h6 + p {
 }
 header.major h2 {
   font-size: 1.75m;
-  color: #537eba;
+  color: var(--accent);
 }
 
 /* Form */
@@ -1491,7 +1496,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 select:focus,
 textarea:focus {
-  border-color: #537eba;
+  border-color: var(--accent);
 }
 
 select {
@@ -1588,7 +1593,7 @@ input[type=radio]:checked + label:before {
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: #537eba;
+  border-color: var(--accent);
 }
 
 input[type=checkbox] + label:before {
@@ -2047,16 +2052,16 @@ input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
 .button:hover {
-  border-color: #537eba;
-  color: #537eba !important;
+  border-color: var(--accent);
+  color: var(--accent) !important;
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 .button:active {
   background-color: rgba(83, 126, 186, 0.1);
-  border-color: #537eba;
-  color: #537eba !important;
+  border-color: var(--accent);
+  color: var(--accent) !important;
 }
 input[type=submit].icon,
 input[type=reset].icon,
@@ -2104,8 +2109,8 @@ input[type=submit].primary,
 input[type=reset].primary,
 input[type=button].primary,
 .button.primary {
-  background-color: #537eba;
-  border-color: #537eba;
+  background-color: var(--accent);
+  border-color: var(--accent);
   color: #ffffff !important;
 }
 input[type=submit].primary:hover,
@@ -2169,7 +2174,7 @@ input[type=button]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background-color: #537eba;
+  background-color: var(--accent);
   background-attachment: scroll, scroll;
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
@@ -2646,7 +2651,7 @@ body.is-touch .poptrox-popup .closer {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #537eba;
+    background: var(--accent);
     color: #fff;
     min-width: 320px;
   }
@@ -2690,7 +2695,7 @@ body.is-touch .poptrox-popup .closer {
     font-weight: 900;
   }
   #titleBar .toggle:before {
-    background: #537eba;
+    background: var(--accent);
     color: #ffffff;
     content: "\f0c9";
     display: block;
