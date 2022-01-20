@@ -172,12 +172,12 @@ $size-header-pad: 4em;
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		border-bottom: dotted 1px;
-		color: _palette(accentccb, bg);
+		color: _palette(accent1, bg);
 		text-decoration: none;
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accentccb, bg);
+			color: _palette(accent1, bg);
 			text-decoration: none;
 		}
 	}
@@ -408,7 +408,8 @@ $size-header-pad: 4em;
 
 		&.major {
 			h2 {
-				font-size: 2em;
+				font-size: 1.75m;
+				color: _palette(accent1, bg);
 			}
 		}
 	}
@@ -448,7 +449,7 @@ $size-header-pad: 4em;
 		}
 
 		&:focus {
-			border-color: _palette(accentccb, bg);
+			border-color: _palette(accent1, bg);
 		}
 	}
 
@@ -537,7 +538,7 @@ $size-header-pad: 4em;
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(accentccb, bg);
+				border-color: _palette(accent1, bg);
 			}
 		}
 	}
@@ -654,7 +655,8 @@ $size-header-pad: 4em;
 		}
 
 		&.logo {
-			background-color: _palette(accent1, bg);
+			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			width: 8.25em;
 
 			&:before {
 				background: none;
@@ -807,6 +809,7 @@ $size-header-pad: 4em;
 				&:before {
 					font-size: 1.5em;
 				}
+				color: _palette(fg-light);
 			}
 		}
 	}
@@ -1039,14 +1042,14 @@ $size-header-pad: 4em;
 		white-space: nowrap;
 
 		&:hover {
-			border-color: _palette(accentccb, bg);
-			color: _palette(accentccb, bg) !important;
+			border-color: _palette(accent1, bg);
+			color: _palette(accent1, bg) !important;
 		}
 
 		&:active {
-			background-color: transparentize(_palette(accentccb, bg), 0.9);
-			border-color: _palette(accentccb, bg);
-			color: _palette(accentccb, bg) !important;
+			background-color: transparentize(_palette(accent1, bg), 0.9);
+			border-color: _palette(accent1, bg);
+			color: _palette(accent1, bg) !important;
 		}
 
 		&.icon {
@@ -1080,18 +1083,18 @@ $size-header-pad: 4em;
 		}
 
 		&.primary {
-			background-color: _palette(accentccb, bg);
-			border-color: _palette(accentccb, bg);
-			color: _palette(accentccb, fg-bold) !important;
+			background-color: _palette(accent1, bg);
+			border-color: _palette(accent1, bg);
+			color: _palette(accent1, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accentccb, bg), 5);
-				border-color: lighten(_palette(accentccb, bg), 5);
+				background-color: lighten(_palette(accent1, bg), 5);
+				border-color: lighten(_palette(accent1, bg), 5);
 			}
 
 			&:active {
-				background-color: darken(_palette(accentccb, bg), 5);
-				border-color: darken(_palette(accentccb, bg), 5);
+				background-color: darken(_palette(accent1, bg), 5);
+				border-color: darken(_palette(accent1, bg), 5);
 			}
 		}
 
@@ -1132,7 +1135,7 @@ $size-header-pad: 4em;
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accentccb, bg);
+		background-color:		_palette(accent1, bg);
 		background-attachment:	scroll,								scroll;
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
@@ -1143,7 +1146,7 @@ $size-header-pad: 4em;
 		justify-content: space-between;
 		height: 100%;
 		left: 0;
-		padding: ($size-header-pad * 2) $size-header-pad;
+		padding: ($size-header-pad * 1.5) $size-header-pad;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -1209,11 +1212,14 @@ $size-header-pad: 4em;
 					display: block;
 					// padding: 0.85em 0;
 					text-decoration: none;
+					font-size: 1.5em;
+					line-height: 2;
 				}
 
 				#nav > ul li a.active {
 						color: _palette(bg);
 						font-weight: bold;
+						letter-spacing: 1.25px;
 					}
 
 					#nav > ul li a:hover {
@@ -1229,52 +1235,6 @@ $size-header-pad: 4em;
 					border-top: 0;
 				}
 
-	}
-
-/* Footer */
-
-	#footer {
-		.icons {
-			margin: (_size(element-margin) * 0.5) 0 0 0;
-
-			a {
-				color: _palette(accent2, fg-light);
-			}
-
-			a:hover, a:focus, a:active {
-				color: _palette(bg);
-			}
-		}
-
-		.copyright {
-			color: _palette(accent2, fg-light);
-			font-size: 0.8em;
-			list-style: none;
-			margin: (_size(element-margin) * 0.5) 0 0 0;
-			padding: 0;
-
-			li {
-				border-left: solid 1px _palette(accent2, border);
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
-
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-				a {
-					color: inherit;
-				}
-
-				a:hover, a:focus {
-					color: _palette(fg-bold);
-				}
-			}
-		}
 	}
 
 /* Main */
@@ -1510,20 +1470,6 @@ $size-header-pad: 4em;
 				}
 			}
 
-		/* Footer */
-
-			#footer {
-				.copyright {
-					li {
-						border-left-width: 0;
-						display: block;
-						line-height: 2.25em;
-						margin-left: 0;
-						padding-left: 0;
-					}
-				}
-			}
-
 		/* Main */
 
 			#main {
@@ -1586,39 +1532,25 @@ $size-header-pad: 4em;
 				#nav {
 					display: none;
 				}
+
+				.inner .avatar{
+					display: none;
+				}
 			}
 
 		/* Footer */
 
 			#footer {
 				background-attachment:	scroll;
-				background-color:		_palette(accent2, bg);
-				// background-image:		url('images/overlay.png'),		url('../../images/bg.jpg');
 				background-position:	top left,						bottom center;
 				background-repeat:		repeat,							no-repeat;
 				background-size:		auto,							cover;
 				bottom: auto;
 				left: auto;
-				padding: $size-header-pad $size-header-pad ($size-header-pad * 1.5) $size-header-pad;
+				padding: 0;
 				position: relative;
 				text-align: center;
 				width: 100%;
-
-				.icons {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-				}
-
-				.copyright {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-
-					li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
-				}
 			}
 
 		/* Main */
@@ -1694,7 +1626,7 @@ $size-header-pad: 4em;
 		/* Footer */
 
 			#footer {
-				padding: ($size-header-pad * 1.5) $size-header-pad;
+				// padding: ($size-header-pad * 1.5) $size-header-pad;
 			}
 
 		/* Main */
@@ -1742,17 +1674,5 @@ $size-header-pad: 4em;
 			}
 
 		/* Footer */
-
-			#footer {
-				.copyright {
-					li {
-						border-left-width: 0;
-						display: block;
-						line-height: 2.25em;
-						margin-left: 0;
-						padding-left: 0;
-					}
-				}
-			}
 
 	}

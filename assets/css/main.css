@@ -40,10 +40,6 @@
     Flatiron Institute
 	flatironinstitute.org
 */
-:root {
-  --accent: #537eba;
-}
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -147,12 +143,12 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: var(--accent);
+  color: #537eba;
   text-decoration: none;
 }
 a:hover {
   border-bottom-color: transparent;
-  color: var(--accent);
+  color: #537eba;
   text-decoration: none;
 }
 
@@ -1447,7 +1443,8 @@ header h6 + p {
   line-height: 1.5em;
 }
 header.major h2 {
-  font-size: 2em;
+  font-size: 1.75m;
+  color: #537eba;
 }
 
 /* Form */
@@ -1494,7 +1491,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--accent);
+  border-color: #537eba;
 }
 
 select {
@@ -1591,7 +1588,7 @@ input[type=radio]:checked + label:before {
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: var(--accent);
+  border-color: #537eba;
 }
 
 input[type=checkbox] + label:before {
@@ -1698,7 +1695,8 @@ input[type=radio] + label:before {
   width: 100%;
 }
 .image.logo {
-  background-color: #537eba;
+  margin: 0 0 1em 0;
+  width: 8.25em;
 }
 .image.logo:before {
   background: none;
@@ -1822,6 +1820,9 @@ ul.icons li {
 }
 ul.icons li:last-child {
   padding-right: 0;
+}
+ul.icons li .icon {
+  color: #8f8f8f;
 }
 ul.icons li .icon:before {
   font-size: 1.5em;
@@ -2044,16 +2045,16 @@ input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
 .button:hover {
-  border-color: var(--accent);
-  color: var(--accent) !important;
+  border-color: #537eba;
+  color: #537eba !important;
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 .button:active {
-  background-color: rgba(129, 173, 74, 0.1);
-  border-color: var(--accent);
-  color: var(--accent) !important;
+  background-color: rgba(83, 126, 186, 0.1);
+  border-color: #537eba;
+  color: #537eba !important;
 }
 input[type=submit].icon,
 input[type=reset].icon,
@@ -2101,23 +2102,23 @@ input[type=submit].primary,
 input[type=reset].primary,
 input[type=button].primary,
 .button.primary {
-  background-color: var(--accent);
-  border-color: var(--accent);
+  background-color: #537eba;
+  border-color: #537eba;
   color: #ffffff !important;
 }
 input[type=submit].primary:hover,
 input[type=reset].primary:hover,
 input[type=button].primary:hover,
 .button.primary:hover {
-  background-color: #8eb859;
-  border-color: #8eb859;
+  background-color: #658cc1;
+  border-color: #658cc1;
 }
 input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 .button.primary:active {
-  background-color: #749b42;
-  border-color: #749b42;
+  background-color: #4671ae;
+  border-color: #4671ae;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2166,7 +2167,7 @@ input[type=button]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background-color: var(--accent);
+  background-color: #537eba;
   background-attachment: scroll, scroll;
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
@@ -2177,7 +2178,7 @@ input[type=button]:disabled,
   justify-content: space-between;
   height: 100%;
   left: 0;
-  padding: 8em 4em;
+  padding: 6em 4em;
   position: fixed;
   text-align: right;
   top: 0;
@@ -2239,10 +2240,13 @@ input[type=button]:disabled,
   color: rgba(255, 255, 255, 0.4);
   display: block;
   text-decoration: none;
+  font-size: 1.5em;
+  line-height: 2;
 }
 #header #nav > ul li a.active {
   color: #fff;
   font-weight: bold;
+  letter-spacing: 1.25px;
 }
 #header #nav > ul li a:hover {
   color: #fff;
@@ -2254,42 +2258,6 @@ input[type=button]:disabled,
 }
 #header #header > nav ul li:first-child {
   border-top: 0;
-}
-
-/* Footer */
-#footer .icons {
-  margin: 1em 0 0 0;
-}
-#footer .icons a {
-  color: rgba(255, 255, 255, 0.4);
-}
-#footer .icons a:hover, #footer .icons a:focus, #footer .icons a:active {
-  color: #fff;
-}
-#footer .copyright {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.8em;
-  list-style: none;
-  margin: 1em 0 0 0;
-  padding: 0;
-}
-#footer .copyright li {
-  border-left: solid 1px rgba(255, 255, 255, 0.25);
-  display: inline-block;
-  line-height: 1em;
-  margin-left: 0.75em;
-  padding-left: 0.75em;
-}
-#footer .copyright li:first-child {
-  border-left: 0;
-  margin-left: 0;
-  padding-left: 0;
-}
-#footer .copyright li a {
-  color: inherit;
-}
-#footer .copyright li a:hover, #footer .copyright li a:focus {
-  color: #1a1a1a;
 }
 
 /* Main */
@@ -2581,15 +2549,6 @@ body.is-touch .poptrox-popup .closer {
     margin-bottom: 0;
   }
 
-  /* Footer */
-  #footer .copyright li {
-    border-left-width: 0;
-    display: block;
-    line-height: 2.25em;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
   /* Main */
   #main {
     margin-left: 30%;
@@ -2632,33 +2591,22 @@ body.is-touch .poptrox-popup .closer {
   #header #nav {
     display: none;
   }
+  #header .inner .avatar {
+    display: none;
+  }
 
   /* Footer */
   #footer {
     background-attachment: scroll;
-    background-color: #1f1815;
     background-position: top left, bottom center;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     bottom: auto;
     left: auto;
-    padding: 4em 4em 6em 4em;
+    padding: 0;
     position: relative;
     text-align: center;
     width: 100%;
-  }
-  #footer .icons {
-    margin: 0 0 1em 0;
-  }
-  #footer .copyright {
-    margin: 0 0 1em 0;
-  }
-  #footer .copyright li {
-    border-left-width: 1px;
-    display: inline-block;
-    line-height: 1em;
-    margin-left: 0.75em;
-    padding-left: 0.75em;
   }
 
   /* Main */
@@ -2709,10 +2657,6 @@ body.is-touch .poptrox-popup .closer {
   }
 
   /* Footer */
-  #footer {
-    padding: 2.25em 1.5em;
-  }
-
   /* Main */
   #main {
     padding: 2.25em 1.5em 0.25em 1.5em;
@@ -2742,13 +2686,6 @@ body.is-touch .poptrox-popup .closer {
   }
 
   /* Footer */
-  #footer .copyright li {
-    border-left-width: 0;
-    display: block;
-    line-height: 2.25em;
-    margin-left: 0;
-    padding-left: 0;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
