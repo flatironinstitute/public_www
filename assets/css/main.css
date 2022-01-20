@@ -42,7 +42,7 @@
 */
 
 :root {
-  --accent: var(--accent);
+  --accent: #537eba;
 }
 
 html, body, div, span, applet, object,
