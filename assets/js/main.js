@@ -173,8 +173,10 @@
   });
 
   const logoIcon = Array.from(document.querySelectorAll('span.title > #logo-icon'))[0];
-  logoIcon.addEventListener("click", function(){
-    window.open("https://www.simonsfoundation.org/flatiron/");
-    return false;
-  });
+  if (logoIcon) {
+      logoIcon.addEventListener("click", function(){
+      window.open("https://www.simonsfoundation.org/flatiron/");
+      return false;
+    })
+  };
 })(jQuery);
