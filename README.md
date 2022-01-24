@@ -30,17 +30,15 @@ If you wish to have both a thumbnail (for fast loading) and a larger image (for 
 
 ```html
 <article class="col-6 col-12-xsmall work-item">
-    <a href="images/fulls/02.jpg" class="image fit thumb">
-        <img src="images/thumbs/02.jpg" alt="gray mist" />
-    </a>
+  <a href="images/fulls/02.jpg" class="image fit thumb">
+    <img src="images/thumbs/02.jpg" alt="gray mist" />
+  </a>
 </article>
 ```
-
 
 ### Mathjax
 
 Mathjax 3.0 has been included as a courtesy. Feel free to delete if you are not using.
-
 
 ### Icons
 
@@ -48,10 +46,9 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 
 ```html
 <a href="#" class="icon fa-instagram">
-    <span class="label">Instagram</span>
+  <span class="label">Instagram</span>
 </a>
 ```
-
 
 ### Folder Structure
 
@@ -69,9 +66,7 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
     ├── LICENSE
     └── README.md
 
-
 ## Resources
-
 
 ### Additional Documentation
 
@@ -88,7 +83,6 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 [css-basics]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [js-basics]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [mathjax]: https://docs.mathjax.org/en/latest/index.html
-
 
 ## License
 
