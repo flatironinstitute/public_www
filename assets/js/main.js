@@ -171,4 +171,10 @@
     $val = $center.find(":selected").val();
     root.style.setProperty("--accent", $val);
   });
+
+  const logoIcon = Array.from(document.querySelectorAll('span.title > #logo-icon'))[0];
+  logoIcon.addEventListener("click", function(){
+    window.open("https://www.simonsfoundation.org/flatiron/");
+    return false;
+  });
 })(jQuery);
