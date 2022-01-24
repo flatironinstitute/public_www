@@ -833,6 +833,10 @@ input[type="radio"] {
     &:before {
       background: none;
     }
+    &:hover {
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0.8;
+    }
   }
 
   &.thumb {
@@ -1405,13 +1409,14 @@ input[type="button"],
 
   #nav > ul li a.active {
     color: _palette(bg);
-    font-weight: bold;
-    letter-spacing: 1.25px;
+    -moz-transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
   }
 
   #nav > ul li a:hover {
     color: _palette(bg);
-    font-weight: bold;
     -moz-transition: all 250ms ease-out;
     -webkit-transition: all 250ms ease-out;
     -ms-transition: all 250ms ease-out;
@@ -1767,7 +1772,7 @@ body.is-touch {
     @include vendor("backface-visibility", "hidden");
     @include vendor("transition", "transform #{_duration(header)} ease");
     display: block;
-    height: 44px;
+    height: 55px;
     left: 0;
     position: fixed;
     top: 0;
@@ -1779,13 +1784,16 @@ body.is-touch {
 
     .title {
       color: #fff;
-      display: block;
+      display: flex;
       font-weight: _font(weight-bold);
-      height: 44px;
-      line-height: 44px;
+      height: 55px;
+      line-height: 55px;
       padding: 0 1em;
       width: 100%;
       text-align: right;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
 
       a {
         border: 0;
@@ -1799,7 +1807,7 @@ body.is-touch {
 
     .toggle {
       @include icon(false, solid);
-      height: 4em;
+      height: 5em;
       position: absolute;
       top: 0;
       width: 6em;
@@ -1813,8 +1821,8 @@ body.is-touch {
         content: "\f0c9";
         display: block;
         font-size: 18px;
-        height: 44px;
-        line-height: 44px;
+        height: 55px;
+        line-height: 55px;
         position: absolute;
         text-align: center;
         top: 0;
@@ -1832,6 +1840,14 @@ body.is-touch {
 
       #header {
         @include vendor("transform", "translateX(0)");
+        z-index: 1000;
+        width: 100%;
+      }
+      #titleBar .toggle {
+        &:before {
+          content: "\f00d" !important;
+          padding-right: 1em;
+        }
       }
     }
   }
@@ -1869,6 +1885,7 @@ body.is-touch {
     &.major {
       h2 {
         font-size: 1.35em;
+        margin-top: $size-header-pad;
       }
     }
   }
@@ -1945,5 +1962,4 @@ body.is-touch {
       }
     }
   }
-
 }

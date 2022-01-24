@@ -5,20 +5,17 @@
 */
 
 (function ($) {
-  var $window = $(window),
+  let $window = $(window),
     $body = $("body"),
     $header = $("#header"),
     $footer = $("#footer"),
     $titleBar = null,
-    $main = $("#main"),
-    $nav = $('#nav'),
-    $year = $('#year'),
-    $center = $('#center'),
+    $val = null,
+    $nav = $("#nav"),
+    $year = $("#year"),
+    $center = $("#center"),
     settings = {
-      // Parallax background effect?
       parallax: true,
-
-      // Parallax factor (lower = more intense, higher = less intense).
       parallaxFactor: 20,
     };
 
@@ -35,7 +32,7 @@
   $window.on("load", function () {
     // Add Date
     const today = new Date();
-    $year.textContent += (`, ${today.getFullYear()}`);
+    $year.textContent += `, ${today.getFullYear()}`;
 
     window.setTimeout(function () {
       $body.removeClass("is-preload");
@@ -56,50 +53,38 @@
   // Footer.
   $footer.appendTo($header);
 
-  // breakpoints.on("<=medium", function () {
-  //   $footer.insertAfter($main);
-  // });
-
-  // breakpoints.on(">medium", function () {
-  //   $footer.appendTo($header);
-  // });
-
   // Header.
+  // Title Bar.
+  $titleBar = $(
+    '<div id="titleBar">' +
+      '<span class="title">' +
+      $("#logo").html() +
+      "</span>" +
+      '<a href="#header" class="toggle"></a>' +
+      "</div>"
+  ).appendTo($body);
 
-      // Title Bar.
-      $titleBar = $(
-        '<div id="titleBar">' +
-          '<span class="title">' + $('#logo').html() + '</span>' +
-          '<a href="#header" class="toggle"></a>' +
-        '</div>'
-      )
-        .appendTo($body);
-
-    // Panel.
-      $header
-        .panel({
-          delay: 500,
-          hideOnClick: true,
-          hideOnSwipe: true,
-          resetScroll: true,
-          resetForms: true,
-          side: 'right',
-          target: $body,
-          visibleClass: 'header-visible'
-        });
+  // Panel.
+  $header.panel({
+    delay: 500,
+    hideOnClick: true,
+    hideOnSwipe: true,
+    resetScroll: true,
+    resetForms: true,
+    side: "right",
+    target: $body,
+    visibleClass: "header-visible",
+  });
 
   // Scrolly.
-    $('.scrolly').scrolly({
-      speed: 1000,
-      offset: function() {
+  $(".scrolly").scrolly({
+    speed: 1000,
+    offset: function () {
+      if (breakpoints.active("<=medium")) return $titleBar.height();
 
-        if (breakpoints.active('<=medium'))
-          return $titleBar.height();
-
-        return 0;
-
-      }
-    });
+      return 0;
+    },
+  });
 
   // Parallax background.
 
@@ -131,74 +116,59 @@
   }
 
   // Nav.
-  var $nav_a = $nav.find('a');
-
+  let $nav_a = $nav.find("a");
   $nav_a
-    .addClass('scrolly')
-    .on('click', function() {
-
+    .addClass("scrolly")
+    .on("click", function () {
       var $this = $(this);
 
       // External link? Bail.
-        if ($this.attr('href').charAt(0) != '#')
-          return;
+      if ($this.attr("href").charAt(0) != "#") return;
 
       // Deactivate all links.
-        $nav_a.removeClass('active');
+      $nav_a.removeClass("active");
 
       // Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-        $this
-          .addClass('active')
-          .addClass('active-locked');
-
+      $this.addClass("active").addClass("active-locked");
     })
-    .each(function() {
-
-      var	$this = $(this),
-        id = $this.attr('href'),
+    .each(function () {
+      var $this = $(this),
+        id = $this.attr("href"),
         $section = $(id);
 
       // No section for this link? Bail.
-        if ($section.length < 1)
-          return;
+      if ($section.length < 1) return;
 
       // Scrollex.
-        $section.scrollex({
-          mode: 'default',
-          top: '5vh',
-          bottom: '5vh',
-          initialize: function() {
+      $section.scrollex({
+        mode: "default",
+        top: "5vh",
+        bottom: "5vh",
+        initialize: function () {
+          // Deactivate section.
+          $section.addClass("inactive");
+        },
+        enter: function () {
+          // Activate section.
+          $section.removeClass("inactive");
 
-            // Deactivate section.
-              $section.addClass('inactive');
-
-          },
-          enter: function() {
-
-            // Activate section.
-              $section.removeClass('inactive');
-
-            // No locked links? Deactivate all links and activate this section's one.
-              if ($nav_a.filter('.active-locked').length == 0) {
-
-                $nav_a.removeClass('active');
-                $this.addClass('active');
-
-              }
-
-            // Otherwise, if this section's link is the one that's locked, unlock it.
-              else if ($this.hasClass('active-locked'))
-                $this.removeClass('active-locked');
-
+          // No locked links? Deactivate all links and activate this section's one.
+          if ($nav_a.filter(".active-locked").length == 0) {
+            $nav_a.removeClass("active");
+            $this.addClass("active");
           }
-        });
 
+          // Otherwise, if this section's link is the one that's locked, unlock it.
+          else if ($this.hasClass("active-locked"))
+            $this.removeClass("active-locked");
+        },
+      });
     });
 
-    // Center Color
-    let root = document.documentElement;
-    $center.on("change", function () {
-      $val = $center.find(":selected").val();
-      root.style.setProperty('--accent', $val);
-    });
+  // Center Color
+  let root = document.documentElement;
+  $center.on("change", function () {
+    $val = $center.find(":selected").val();
+    root.style.setProperty("--accent", $val);
+  });
 })(jQuery);
