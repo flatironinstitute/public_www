@@ -104,18 +104,3 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 Apache Version 2.0
 
 See [LICENSE](LICENSE).
-
-`
-
-  <div class="col-6 col-12-small">
-    <!-- Center Select -->
-    <select name="center" id="center">
-      <option value="#537eba">FI</option>
-      <option value="#ce3232">CCA</option>
-      <option value="#81ad4a">CCB</option>
-      <option value="#f6862d">CCM</option>
-      <option value="#007f9d">CCN</option>
-      <option value="#845b8e">CCQ</option>
-    </select>
-  </div>
-`
