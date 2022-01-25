@@ -3,80 +3,35 @@
 @font-face {
   font-family: "Univers Next W01";
   src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix");
-  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix")
-      format("eot"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/97c0f83d-39ac-412b-9d8a-d98208c0ce8d.woff2")
-      format("woff2"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/fc09acb4-f628-4ba0-b648-d2ca30265b20.woff")
-      format("woff"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/3cb4004c-2eea-45d4-a0b5-7af6f817c451.ttf")
-      format("truetype"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/4d6ce461-aa11-472f-af6d-7466479534e1.svg#4d6ce461-aa11-472f-af6d-7466479534e1")
-      format("svg");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/97c0f83d-39ac-412b-9d8a-d98208c0ce8d.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/fc09acb4-f628-4ba0-b648-d2ca30265b20.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/3cb4004c-2eea-45d4-a0b5-7af6f817c451.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/4d6ce461-aa11-472f-af6d-7466479534e1.svg#4d6ce461-aa11-472f-af6d-7466479534e1") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Univers Next W01";
   src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8c7fe4ab-375c-4be5-bba8-2c4d83ac807a.eot?#iefix");
-  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8c7fe4ab-375c-4be5-bba8-2c4d83ac807a.eot?#iefix")
-      format("eot"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/b37595d7-d2c2-465d-81bd-f5bc289fc565.woff2")
-      format("woff2"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/88e0673d-3db0-4931-ae03-8a4a6eb1bbe6.woff")
-      format("woff"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/957860fc-f472-47cc-afcb-6305b3455894.ttf")
-      format("truetype"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/739dd5f9-b50a-4700-bb3d-77ab01a96697.svg#739dd5f9-b50a-4700-bb3d-77ab01a96697")
-      format("svg");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8c7fe4ab-375c-4be5-bba8-2c4d83ac807a.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/b37595d7-d2c2-465d-81bd-f5bc289fc565.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/88e0673d-3db0-4931-ae03-8a4a6eb1bbe6.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/957860fc-f472-47cc-afcb-6305b3455894.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/739dd5f9-b50a-4700-bb3d-77ab01a96697.svg#739dd5f9-b50a-4700-bb3d-77ab01a96697") format("svg");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "Univers Next W01";
   src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/07e1641d-6281-4461-827c-f3940fa0d811.eot?#iefix");
-  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/07e1641d-6281-4461-827c-f3940fa0d811.eot?#iefix")
-      format("eot"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/e8921ecc-af32-4c3d-9636-dd82b4225e40.woff2")
-      format("woff2"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/20f7bd07-85c9-4687-ab29-0b87584842ff.woff")
-      format("woff"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/2df6d56e-7f31-4175-88df-47d374d8bb60.ttf")
-      format("truetype"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/9ca9081d-10de-4848-b53a-40ceaa62b2b2.svg#9ca9081d-10de-4848-b53a-40ceaa62b2b2")
-      format("svg");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/07e1641d-6281-4461-827c-f3940fa0d811.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/e8921ecc-af32-4c3d-9636-dd82b4225e40.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/20f7bd07-85c9-4687-ab29-0b87584842ff.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/2df6d56e-7f31-4175-88df-47d374d8bb60.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/9ca9081d-10de-4848-b53a-40ceaa62b2b2.svg#9ca9081d-10de-4848-b53a-40ceaa62b2b2") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Univers Next W01";
   src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7af2167c-efe7-44d7-b2e1-6fdeeaa927c9.eot?#iefix");
-  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7af2167c-efe7-44d7-b2e1-6fdeeaa927c9.eot?#iefix")
-      format("eot"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8e26dc86-9708-4a36-89fb-a4416a5b9f5c.woff2")
-      format("woff2"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/c3b66848-d40c-458a-a977-7398cb9c1c82.woff")
-      format("woff"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/ea870cc2-efce-428c-af01-d00573ee4b0e.ttf")
-      format("truetype"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/650a08a0-413e-47e4-a083-617a54b35ab0.svg#650a08a0-413e-47e4-a083-617a54b35ab0")
-      format("svg");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7af2167c-efe7-44d7-b2e1-6fdeeaa927c9.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/8e26dc86-9708-4a36-89fb-a4416a5b9f5c.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/c3b66848-d40c-458a-a977-7398cb9c1c82.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/ea870cc2-efce-428c-af01-d00573ee4b0e.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/650a08a0-413e-47e4-a083-617a54b35ab0.svg#650a08a0-413e-47e4-a083-617a54b35ab0") format("svg");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "Univers Next W01";
   src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/365d926e-03e5-4406-a883-fd0f9e462339.eot?#iefix");
-  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/365d926e-03e5-4406-a883-fd0f9e462339.eot?#iefix")
-      format("eot"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/043eef6e-81ef-483c-831c-7bfd6628554b.woff2")
-      format("woff2"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7b11912a-986d-462e-b88a-4a1758eb23f1.woff")
-      format("woff"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/545a8d94-3389-418c-9b0a-bfc16d1f8285.ttf")
-      format("truetype"),
-    url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/f499fe08-3b8d-4033-a5cf-9089676d1ca5.svg#f499fe08-3b8d-4033-a5cf-9089676d1ca5")
-      format("svg");
+  src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/365d926e-03e5-4406-a883-fd0f9e462339.eot?#iefix") format("eot"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/043eef6e-81ef-483c-831c-7bfd6628554b.woff2") format("woff2"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/7b11912a-986d-462e-b88a-4a1758eb23f1.woff") format("woff"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/545a8d94-3389-418c-9b0a-bfc16d1f8285.ttf") format("truetype"), url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/f499fe08-3b8d-4033-a5cf-9089676d1ca5.svg#f499fe08-3b8d-4033-a5cf-9089676d1ca5") format("svg");
   font-weight: 700;
   font-style: italic;
 }
@@ -201,8 +156,7 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
+blockquote:before, blockquote:after,
 q:before,
 q:after {
   content: "";
@@ -281,12 +235,12 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #537eba;
+  color: #81ad4a;
   text-decoration: none;
 }
 a:hover {
   border-bottom-color: transparent;
-  color: #537eba;
+  color: #81ad4a;
   text-decoration: none;
 }
 
@@ -1595,7 +1549,7 @@ header h6 + p {
 }
 header.major h2 {
   font-size: 1.75m;
-  color: #537eba;
+  color: #81ad4a;
 }
 
 /* Form */
@@ -1611,9 +1565,9 @@ label {
   margin: 0 0 1em 0;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+input[type=text],
+input[type=password],
+input[type=email],
 select,
 textarea {
   -moz-appearance: none;
@@ -1630,19 +1584,19 @@ textarea {
   text-decoration: none;
   width: 100%;
 }
-input[type="text"]:invalid,
-input[type="password"]:invalid,
-input[type="email"]:invalid,
+input[type=text]:invalid,
+input[type=password]:invalid,
+input[type=email]:invalid,
 select:invalid,
 textarea:invalid {
   box-shadow: none;
 }
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
 select:focus,
 textarea:focus {
-  border-color: #537eba;
+  border-color: #81ad4a;
 }
 
 select {
@@ -1665,9 +1619,9 @@ select::-ms-expand {
   display: none;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+input[type=text],
+input[type=password],
+input[type=email],
 select {
   height: 2.75em;
 }
@@ -1676,8 +1630,8 @@ textarea {
   padding: 0.75em;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -1689,8 +1643,8 @@ input[type="radio"] {
   width: 1em;
   z-index: -1;
 }
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type=checkbox] + label,
+input[type=radio] + label {
   text-decoration: none;
   color: #666;
   cursor: pointer;
@@ -1701,8 +1655,8 @@ input[type="radio"] + label {
   padding-right: 0.75em;
   position: relative;
 }
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
+input[type=checkbox] + label:before,
+input[type=radio] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -1714,8 +1668,8 @@ input[type="radio"] + label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
+input[type=checkbox] + label:before,
+input[type=radio] + label:before {
   background: #f7f7f7;
   border-radius: 0.35em;
   border: solid 2px transparent;
@@ -1730,23 +1684,23 @@ input[type="radio"] + label:before {
   top: 0;
   width: 2.0625em;
 }
-input[type="checkbox"]:checked + label:before,
-input[type="radio"]:checked + label:before {
+input[type=checkbox]:checked + label:before,
+input[type=radio]:checked + label:before {
   background: #1a1a1a;
   border-color: #1a1a1a;
   color: #fff;
   content: "\f00c";
 }
-input[type="checkbox"]:focus + label:before,
-input[type="radio"]:focus + label:before {
-  border-color: #537eba;
+input[type=checkbox]:focus + label:before,
+input[type=radio]:focus + label:before {
+  border-color: #81ad4a;
 }
 
-input[type="checkbox"] + label:before {
+input[type=checkbox] + label:before {
   border-radius: 0.35em;
 }
 
-input[type="radio"] + label:before {
+input[type=radio] + label:before {
   border-radius: 100%;
 }
 
@@ -1905,12 +1859,10 @@ input[type="radio"] + label:before {
   margin: 0 0 1em 1.5em;
   top: 0.25em;
 }
-.image.left,
-.image.right {
+.image.left, .image.right {
   max-width: 40%;
 }
-.image.left img,
-.image.right img {
+.image.left img, .image.right img {
   width: 100%;
 }
 .image.fit {
@@ -2100,18 +2052,18 @@ ul.actions.fit.stacked {
   ul.actions:not(.fixed) li:first-child {
     padding-top: 0;
   }
-  ul.actions:not(.fixed) li input[type="submit"],
-  ul.actions:not(.fixed) li input[type="reset"],
-  ul.actions:not(.fixed) li input[type="button"],
-  ul.actions:not(.fixed) li button,
-  ul.actions:not(.fixed) li .button {
+  ul.actions:not(.fixed) li input[type=submit],
+ul.actions:not(.fixed) li input[type=reset],
+ul.actions:not(.fixed) li input[type=button],
+ul.actions:not(.fixed) li button,
+ul.actions:not(.fixed) li .button {
     width: 100%;
   }
-  ul.actions:not(.fixed) li input[type="submit"].icon:before,
-  ul.actions:not(.fixed) li input[type="reset"].icon:before,
-  ul.actions:not(.fixed) li input[type="button"].icon:before,
-  ul.actions:not(.fixed) li button.icon:before,
-  ul.actions:not(.fixed) li .button.icon:before {
+  ul.actions:not(.fixed) li input[type=submit].icon:before,
+ul.actions:not(.fixed) li input[type=reset].icon:before,
+ul.actions:not(.fixed) li input[type=button].icon:before,
+ul.actions:not(.fixed) li button.icon:before,
+ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5em;
   }
 }
@@ -2131,7 +2083,7 @@ table tbody tr {
   border-left: 0;
   border-right: 0;
 }
-table tbody tr:nth-child(2n + 1) {
+table tbody tr:nth-child(2n+1) {
   background-color: #f7f7f7;
 }
 table td {
@@ -2172,22 +2124,18 @@ table.alt tfoot {
 }
 
 /* Button */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type=submit],
+input[type=reset],
+input[type=button],
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   background-color: transparent;
   border-radius: 0.35em;
   border: solid 3px #efefef;
@@ -2204,43 +2152,43 @@ input[type="button"],
   text-decoration: none;
   white-space: nowrap;
 }
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
 .button:hover {
-  border-color: #537eba;
-  color: #537eba !important;
+  border-color: #81ad4a;
+  color: #81ad4a !important;
 }
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active,
 .button:active {
-  background-color: rgba(83, 126, 186, 0.1);
-  border-color: #537eba;
-  color: #537eba !important;
+  background-color: rgba(129, 173, 74, 0.1);
+  border-color: #81ad4a;
+  color: #81ad4a !important;
 }
-input[type="submit"].icon,
-input[type="reset"].icon,
-input[type="button"].icon,
+input[type=submit].icon,
+input[type=reset].icon,
+input[type=button].icon,
 .button.icon {
   padding-left: 1.35em;
 }
-input[type="submit"].icon:before,
-input[type="reset"].icon:before,
-input[type="button"].icon:before,
+input[type=submit].icon:before,
+input[type=reset].icon:before,
+input[type=button].icon:before,
 .button.icon:before {
   margin-right: 0.5em;
 }
-input[type="submit"].fit,
-input[type="reset"].fit,
-input[type="button"].fit,
+input[type=submit].fit,
+input[type=reset].fit,
+input[type=button].fit,
 .button.fit {
   min-width: 0;
   width: 100%;
 }
-input[type="submit"].xsmall,
-input[type="reset"].xsmall,
-input[type="button"].xsmall,
+input[type=submit].xsmall,
+input[type=reset].xsmall,
+input[type=button].xsmall,
 .button.xsmall {
   font-size: 0.8em;
   height: calc(1.25em + 6px);
@@ -2249,46 +2197,45 @@ input[type="button"].xsmall,
   min-width: 5em;
   margin-left: 0.3em;
 }
-input[type="submit"].small,
-input[type="reset"].small,
-input[type="button"].small,
+input[type=submit].small,
+input[type=reset].small,
+input[type=button].small,
 .button.small {
   font-size: 0.8em;
 }
-input[type="submit"].large,
-input[type="reset"].large,
-input[type="button"].large,
+input[type=submit].large,
+input[type=reset].large,
+input[type=button].large,
 .button.large {
   font-size: 1.35em;
 }
-input[type="submit"].primary,
-input[type="reset"].primary,
-input[type="button"].primary,
+input[type=submit].primary,
+input[type=reset].primary,
+input[type=button].primary,
 .button.primary {
-  background-color: #537eba;
-  border-color: #537eba;
+  background-color: #81ad4a;
+  border-color: #81ad4a;
   color: #ffffff !important;
 }
-input[type="submit"].primary:hover,
-input[type="reset"].primary:hover,
-input[type="button"].primary:hover,
+input[type=submit].primary:hover,
+input[type=reset].primary:hover,
+input[type=button].primary:hover,
 .button.primary:hover {
-  background-color: #658cc1;
-  border-color: #658cc1;
+  background-color: #8eb859;
+  border-color: #8eb859;
 }
-input[type="submit"].primary:active,
-input[type="reset"].primary:active,
-input[type="button"].primary:active,
+input[type=submit].primary:active,
+input[type=reset].primary:active,
+input[type=button].primary:active,
 .button.primary:active {
-  background-color: #4671ae;
-  border-color: #4671ae;
+  background-color: #749b42;
+  border-color: #749b42;
 }
-input[type="submit"].disabled,
-input[type="submit"]:disabled,
-input[type="reset"].disabled,
-input[type="reset"]:disabled,
-input[type="button"].disabled,
-input[type="button"]:disabled,
+input[type=submit].disabled, input[type=submit]:disabled,
+input[type=reset].disabled,
+input[type=reset]:disabled,
+input[type=button].disabled,
+input[type=button]:disabled,
 .button.disabled,
 .button:disabled {
   background-color: #e7e7e7 !important;
@@ -2331,7 +2278,7 @@ input[type="button"]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background-color: #537eba;
+  background-color: #81ad4a;
   background-attachment: scroll, scroll;
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
@@ -2699,9 +2646,9 @@ body.is-touch .poptrox-popup .closer {
 @media screen and (max-width: 1800px) {
   /* Basic */
   body,
-  input,
-  select,
-  textarea {
+input,
+select,
+textarea {
     font-size: 12pt;
   }
 }
@@ -2738,11 +2685,11 @@ body.is-touch .poptrox-popup .closer {
 @media screen and (max-width: 980px) {
   /* Basic */
   h1 br,
-  h2 br,
-  h3 br,
-  h4 br,
-  h5 br,
-  h6 br {
+h2 br,
+h3 br,
+h4 br,
+h5 br,
+h6 br {
     display: none;
   }
 
@@ -2757,10 +2704,10 @@ body.is-touch .poptrox-popup .closer {
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-transition: -moz-transform ease;
-    -webkit-transition: -webkit-transform ease;
-    -ms-transition: -ms-transform ease;
-    transition: transform ease;
+    -moz-transition: -moz-transform  ease;
+    -webkit-transition: -webkit-transform  ease;
+    -ms-transition: -ms-transform  ease;
+    transition: transform  ease;
     padding: 6em 4em;
     position: fixed;
     text-align: center;
@@ -2811,10 +2758,10 @@ body.is-touch .poptrox-popup .closer {
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-transition: -moz-transform ease;
-    -webkit-transition: -webkit-transform ease;
-    -ms-transition: -ms-transform ease;
-    transition: transform ease;
+    -moz-transition: -moz-transform  ease;
+    -webkit-transition: -webkit-transform  ease;
+    -ms-transition: -ms-transform  ease;
+    transition: transform  ease;
     display: block;
     height: 55px;
     left: 0;
@@ -2822,7 +2769,7 @@ body.is-touch .poptrox-popup .closer {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #537eba;
+    background: #81ad4a;
     color: #fff;
     min-width: 320px;
   }
@@ -2855,6 +2802,7 @@ body.is-touch .poptrox-popup .closer {
     border: 0;
     outline: 0;
     left: 0;
+    z-index: 1001;
   }
   #titleBar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
@@ -2869,7 +2817,8 @@ body.is-touch .poptrox-popup .closer {
     font-weight: 900;
   }
   #titleBar .toggle:before {
-    background: #537eba;
+    text-decoration: none;
+    background: #81ad4a;
     color: #ffffff;
     content: "\f0c9";
     display: block;
@@ -2881,6 +2830,18 @@ body.is-touch .poptrox-popup .closer {
     top: 0;
     width: 64px;
     left: 0;
+  }
+  #titleBar .toggle:before:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
   }
 
   body.header-visible #titleBar {
@@ -2919,7 +2880,7 @@ body.is-touch .poptrox-popup .closer {
 
   /* Section/Article */
   section.special,
-  article.special {
+article.special {
     text-align: center;
   }
 
@@ -2959,7 +2920,7 @@ body.is-touch .poptrox-popup .closer {
     border-radius: 0;
   }
   .poptrox-popup .nav-next:before,
-  .poptrox-popup .nav-previous:before {
+.poptrox-popup .nav-previous:before {
     margin-top: -1em;
   }
 }

@@ -2802,6 +2802,7 @@ h6 br {
     border: 0;
     outline: 0;
     left: 0;
+    z-index: 1001;
   }
   #titleBar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
