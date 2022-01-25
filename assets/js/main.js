@@ -172,11 +172,13 @@
     root.style.setProperty("--accent", $val);
   });
 
-  const logoIcon = Array.from(document.querySelectorAll('span.title > #logo-icon'))[0];
+  const logoIcon = Array.from(
+    document.querySelectorAll("span.title > #logo-icon")
+  )[0];
   if (logoIcon) {
-      logoIcon.addEventListener("click", function(){
+    logoIcon.addEventListener("click", function () {
       window.open("https://www.simonsfoundation.org/flatiron/");
       return false;
-    })
-  };
+    });
+  }
 })(jQuery);

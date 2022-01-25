@@ -26,6 +26,17 @@ The `index.html` file contains a stubbed out personal website template. Comments
 <!-- TODO: Add your citations  -->
 ```
 
+### Center Color Palattes
+
+The default css theme uses the Flatiron Institute blue color scheme. CSS stylesheets have also been provided with each of the center branded colors. To use a center color scheme simply change the name of the css file in the stylesheet link from `main.css` to the center acronym ex: `cca.css`.
+
+```html
+<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+<link rel="stylesheet" href="assets/css/cca.css" />
+```
+
+### Thumbnails
+
 If you wish to have both a thumbnail (for fast loading) and a larger image (for detail) please follow the convention of the first example project.
 
 ```html
@@ -54,6 +65,10 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 
     .
     ├── assets
+    │   ├── css
+    │   ├── js
+    │   ├── sass
+    │   └── webfonts
     ├── images
     │   ├── fulls
     │   ├── thumbs
@@ -89,3 +104,18 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
 Apache Version 2.0
 
 See [LICENSE](LICENSE).
+
+`
+
+  <div class="col-6 col-12-small">
+    <!-- Center Select -->
+    <select name="center" id="center">
+      <option value="#537eba">FI</option>
+      <option value="#ce3232">CCA</option>
+      <option value="#81ad4a">CCB</option>
+      <option value="#f6862d">CCM</option>
+      <option value="#007f9d">CCN</option>
+      <option value="#845b8e">CCQ</option>
+    </select>
+  </div>
+`
