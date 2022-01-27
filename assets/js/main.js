@@ -165,11 +165,23 @@
       });
     });
 
-  // Center Color
-  let root = document.documentElement;
-  $center.on("change", function () {
-    $val = $center.find(":selected").val();
-    root.style.setProperty("--accent", $val);
+  // Lightbox gallery.
+  $window.on("load", function () {
+    $("#research").poptrox({
+      caption: function ($a) {
+        return $a.children("img").attr("alt");
+      },
+      overlayColor: "#2c2c2c",
+      overlayOpacity: 0.85,
+      popupCloserText: "",
+      popupLoaderText: "",
+      selector: ".work-item a.image",
+      usePopupCaption: true,
+      usePopupDefaultStyling: false,
+      usePopupEasyClose: false,
+      usePopupNav: true,
+      windowMargin: breakpoints.active("<=small") ? 0 : 50,
+    });
   });
 
   const logoIcon = Array.from(

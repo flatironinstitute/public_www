@@ -329,12 +329,12 @@ a {
     )
   );
   border-bottom: dotted 1px;
-  color: _palette(accentccm, bg);
+  color: _palette(accent1, bg);
   text-decoration: none;
 
   &:hover {
     border-bottom-color: transparent;
-    color: _palette(accentccm, bg);
+    color: _palette(accent1, bg);
     text-decoration: none;
   }
 }
@@ -574,7 +574,7 @@ header {
   &.major {
     h2 {
       font-size: 1.75m;
-      color: _palette(accentccm, bg);
+      color: _palette(accent1, bg);
     }
   }
 }
@@ -614,7 +614,7 @@ textarea {
   }
 
   &:focus {
-    border-color: _palette(accentccm, bg);
+    border-color: _palette(accent1, bg);
   }
 }
 
@@ -705,7 +705,7 @@ input[type="radio"] {
 
   &:focus + label {
     &:before {
-      border-color: _palette(accentccm, bg);
+      border-color: _palette(accent1, bg);
     }
   }
 }
@@ -1228,14 +1228,14 @@ input[type="button"],
   white-space: nowrap;
 
   &:hover {
-    border-color: _palette(accentccm, bg);
-    color: _palette(accentccm, bg) !important;
+    border-color: _palette(accent1, bg);
+    color: _palette(accent1, bg) !important;
   }
 
   &:active {
-    background-color: transparentize(_palette(accentccm, bg), 0.9);
-    border-color: _palette(accentccm, bg);
-    color: _palette(accentccm, bg) !important;
+    background-color: transparentize(_palette(accent1, bg), 0.9);
+    border-color: _palette(accent1, bg);
+    color: _palette(accent1, bg) !important;
   }
 
   &.icon {
@@ -1269,18 +1269,18 @@ input[type="button"],
   }
 
   &.primary {
-    background-color: _palette(accentccm, bg);
-    border-color: _palette(accentccm, bg);
-    color: _palette(accentccm, fg-bold) !important;
+    background-color: _palette(accent1, bg);
+    border-color: _palette(accent1, bg);
+    color: _palette(accent1, fg-bold) !important;
 
     &:hover {
-      background-color: lighten(_palette(accentccm, bg), 5);
-      border-color: lighten(_palette(accentccm, bg), 5);
+      background-color: lighten(_palette(accent1, bg), 5);
+      border-color: lighten(_palette(accent1, bg), 5);
     }
 
     &:active {
-      background-color: darken(_palette(accentccm, bg), 5);
-      border-color: darken(_palette(accentccm, bg), 5);
+      background-color: darken(_palette(accent1, bg), 5);
+      border-color: darken(_palette(accent1, bg), 5);
     }
   }
 
@@ -1321,7 +1321,7 @@ input[type="button"],
   @include vendor("flex-direction", "column");
   @include vendor("align-items", "flex-end");
   @include vendor("justify-content", "space-between");
-  background-color: _palette(accentccm, bg);
+  background-color: _palette(accent1, bg);
   background-attachment: scroll, scroll;
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
@@ -1569,7 +1569,6 @@ input[type="button"],
     &:before {
       @include vendor("box-sizing", "content-box");
       border-radius: 100%;
-      border: solid 3px rgba(255, 255, 255, 0.5);
       content: "\f00d";
       display: block;
       font-size: 1em;
@@ -1778,7 +1777,7 @@ body.is-touch {
     top: 0;
     width: 100%;
     z-index: _misc(z-index-base) + 1;
-    background: _palette(accentccm, bg);
+    background: _palette(accent1, bg);
     color: #fff;
     min-width: 320px;
 
@@ -1807,6 +1806,10 @@ body.is-touch {
 
     .toggle {
       @include icon(false, solid);
+      @include vendor(
+        "transition",
+        "opacity #{_duration(transition)} ease-in-out"
+      );
       height: 5em;
       position: absolute;
       top: 0;
@@ -1818,8 +1821,8 @@ body.is-touch {
 
       &:before {
         @include icon(false, solid);
-        background: _palette(accentccm, bg);
-        color: _palette(accentccm, fg-bold);
+        background: _palette(accent1, bg);
+        color: _palette(accent1, fg-bold);
         content: "\f0c9";
         display: block;
         font-size: 18px;
@@ -1848,7 +1851,9 @@ body.is-touch {
       #titleBar .toggle {
         &:before {
           content: "\f00d" !important;
-          padding-right: 1em;
+          left: -4em;
+          border-radius: 100%;
+          top: 30%;
         }
       }
     }

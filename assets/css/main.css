@@ -2598,7 +2598,6 @@ input[type=button]:disabled,
   -ms-box-sizing: content-box;
   box-sizing: content-box;
   border-radius: 100%;
-  border: solid 3px rgba(255, 255, 255, 0.5);
   content: "\f00d";
   display: block;
   font-size: 1em;
@@ -2795,6 +2794,10 @@ h6 br {
   }
   #titleBar .toggle {
     text-decoration: none;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     height: 5em;
     position: absolute;
     top: 0;
@@ -2860,7 +2863,9 @@ h6 br {
   }
   body.header-visible #titleBar .toggle:before {
     content: "\f00d" !important;
-    padding-right: 1em;
+    left: -4em;
+    border-radius: 100%;
+    top: 30%;
   }
 }
 /* Small */
