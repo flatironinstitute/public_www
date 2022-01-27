@@ -43,7 +43,7 @@ This template supports images, videos, pdfs, or gif hosted locally or elsewhere.
  
 ### Thumbnails
 
-If you wish to have both a thumbnail (for fast loading) and a larger image (for detail) please follow the convention of the first example project.
+If you wish to have both a thumbnail (for fast loading) and a larger image or video (for detail) please follow the convention of the first example project. Please note that the 'alt' tag text will be repurposed as the popup caption. 
 
 ```html
 <article class="col-6 col-12-xsmall work-item">
