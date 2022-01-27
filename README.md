@@ -2,6 +2,8 @@
 
 Basic templates for individual user pages in your public_www directory at the Flatiron Institute.
 
+[View Demo](https://users.flatironinstitute.org/~elovero/)
+
 ## Getting Started
 
 Each user can create their own public, static website, hosted at https://users.flatironinstitute.org/~username/. For files on popeye, sites are hosted at https://sdsc-users.flatironinstitute.org/~username/.
@@ -35,6 +37,10 @@ The default css theme uses the Flatiron Institute blue color scheme. CSS stylesh
 <link rel="stylesheet" href="assets/css/cca.css" />
 ```
 
+### Media Types
+
+This template supports images, videos, pdfs, or gif hosted locally or elsewhere. Simply substitute the src or html link with the hosted url. Please be mindful of file sizes and use web-resolution images. Should you wish to include a larger video, consider hosting your video on Vimeo, Youtube, or another third-party host.
+ 
 ### Thumbnails
 
 If you wish to have both a thumbnail (for fast loading) and a larger image (for detail) please follow the convention of the first example project.
