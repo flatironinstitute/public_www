@@ -26,7 +26,7 @@ The `index.html` file contains a stubbed out personal website template. Comments
 <!-- TODO: Add your citations  -->
 ```
 
-### Center Color Palattes
+### Center Color Palettes
 
 The default css theme uses the Flatiron Institute blue color scheme. CSS stylesheets have also been provided with each of the center branded colors. To use a center color scheme simply change the name of the css file in the stylesheet link from `main.css` to the center acronym ex: `cca.css`.
 
