@@ -30,20 +30,15 @@ The `index.html` file contains a stubbed out personal website template. Comments
 
 ### Center Color Palettes
 
-The default css theme uses the Flatiron Institute blue color scheme. CSS stylesheets have also been provided with each of the center branded colors. To use a center color scheme simply change the name of the css file in the stylesheet link from `main.css` to the center acronym ex: `cca.css`.
-
-```html
-<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-<link rel="stylesheet" href="assets/css/cca.css" />
-```
+TODO: Color palettes
 
 ### Media Types
 
 This template supports images, videos, pdfs, or gif hosted locally or elsewhere. Simply substitute the src or html link with the hosted url. Please be mindful of file sizes and use web-resolution images. Should you wish to include a larger video, consider hosting your video on Vimeo, Youtube, or another third-party host.
- 
+
 ### Thumbnails
 
-If you wish to have both a thumbnail (for fast loading) and a larger image or video (for detail) please follow the convention of the first example project. Please note that the 'alt' tag text will be repurposed as the popup caption. 
+If you wish to have both a thumbnail (for fast loading) and a larger image or video (for detail) please follow the convention of the first example project. Please note that the 'alt' tag text will be repurposed as the popup caption.
 
 ```html
 <article class="col-6 col-12-xsmall work-item">
@@ -73,7 +68,6 @@ This page uses Font Awesome vector icons for social media. Additional logos can 
     ├── assets
     │   ├── css
     │   ├── js
-    │   ├── sass
     │   └── webfonts
     ├── images
     │   ├── fulls
