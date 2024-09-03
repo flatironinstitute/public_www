@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TODO: Add your name -->
+    <title>Scientist Name | Flatiron Institute</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main_v2.css" />
+    <script async type="module" src="assets/js/main_v2.js"></script>
+    <!-- Begin KaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+      integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+      integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+      integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <!-- End KaTeX -->
+  </head>
+  <body>
+    <header>
+      <!-- TODO: Add a personal photo in /images folder or switch src link to avatar.jpg for a gray circle -->
+      <img id="user-image" src="images/avatar-placeholder.jpg" alt="" />
+      <button id="toggle-nav" popovertarget="nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu"
+        >
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+      <nav popover id="nav">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#research">Research</a>
+          </li>
+          <li>
+            <a href="#papers">Papers</a>
+          </li>
+          <li>
+            <a href="#talks">Talks</a>
+          </li>
+          <li>
+            <a href="#software">Software</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a id="flatiron-logo" href="https://www.simonsfoundation.org/flatiron/">
+        <img
+          src="https://users.flatironinstitute.org/~scc/logo_white.png"
+          alt="Flatiron Institute logo"
+        />
+      </a>
+    </header>
+    <main>
+      <!-- About -->
+      <section>
+        <!-- TODO: Add your name -->
+        <h2>Scientist Name, Ph.D.</h2>
+        <!-- TODO: Add your own bio -->
+        <p>
+          I'm a Flatiron Research Fellow in the
+          <a
+            href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/"
+            rel="noreferrer noopener"
+            target="_blank"
+            >Center for Computational Biology</a
+          >
+          at the
+          <a
+            href="https://www.simonsfoundation.org/flatiron/"
+            rel="noreferrer noopener"
+            target="_blank"
+            >Flatiron Institute</a
+          >
+          interested in lorem ipsum dolor sit amet. I received my Ph.D. in
+          Something from the University of Place, where I was advised by
+          professors First Scientist and Second Scientist. My research focuses
+          on consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. In the past, I have worked at Accumsan,
+          Lacus vel Facilisis and Volutpat Est.
+          <a href="pdfs/fakecv.pdf" rel="noreferrer noopener" target="_blank"
+            >Download my CV.</a
+          >
+        </p>
+      </section>
+      <!-- Research -->
+      <section>
+        <h2>Research</h2>
+        <!-- TODO: Replace with project info and choose image type -->
+        <div>
+          <article>
+            <h3>Project With Popup Image</h3>
+            <p>
+              Project description. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+              <a href="#" rel="noreferrer noopener" target="_blank"
+                >Here is a link</a
+              >
+              to some relevant documentation.
+            </p>
+          </article>
+          <article>
+            <a href="images/fulls/02.jpg">
+              <!-- TODO: Add alt text for popup caption. -->
+              <img
+                src="images/thumbs/02.jpg"
+                alt="Captions come from the img alt attribute."
+              />
+            </a>
+          </article>
+          <article>
+            <h3>Project Just Thumbnail</h3>
+            <p>
+              Project description. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </article>
+          <article>
+            <img src="images/thumbs/03.jpg" alt="" />
+          </article>
+          <article>
+            <h3>Project With Gif</h3>
+            <p>
+              James Webb Space Telescope is fully deployed, but there is much
+              more work to do. For live details,
+              <a
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://jwst.nasa.gov/content/webbLaunch/whereIsWebb.html"
+                >check out this data-driven infographic</a
+              >, which shows the status of Webb on its journey to L2 orbit. The
+              page constantly updates as Webb travels, deploys, and cools to
+              operating temperature.
+            </p>
+          </article>
+          <article>
+            <img
+              src="https://media.giphy.com/media/3o6ZtrDdmPIyO550U8/giphy.gif"
+              alt="James Webb"
+            />
+          </article>
+          <article>
+            <h3>Project With Video Popup</h3>
+            <p>
+              Click to see the full video.
+              <i>The James Webb Space Telescope Mission Overview</i> was
+              photographed in 2019 at the Goddard Space Flight Center by Michael
+              McClare. This film and many others are available for viewing and
+              download at the
+              <a
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://images.nasa.gov/details-Mission_Overview_MASTER-h264"
+                >NASA Image and Video Library</a
+              >.
+            </p>
+          </article>
+          <article>
+            <a href="images/fulls/movie.mp4"
+              ><img src="images/thumbs/movie.jpg" alt="James Webb Overview"
+            /></a>
+          </article>
+          <article>
+            <h3>Project With Inline Video</h3>
+            <p>
+              If you host video locally, you may want to include more than one
+              video format (ex: .mp4 and .ogg ) for greater browser
+              compatibility. Additionally, it is possible to embed a video
+              hosted on Vimeo, Youtube, or elsewhere. Just wrap the embed code
+              with an article tag to maintain the styling.
+            </p>
+          </article>
+          <article>
+            <video width="auto" height="auto" controls>
+              <source src="images/fulls/movie.mp4" type="video/mp4" />
+              <!-- TODO: You may wish to add an alternate ogg file type for greater browser compatibility -->
+              <!-- <source src="movie.ogg" type="video/ogg"> -->
+              Your browser does not support the video tag.
+            </video>
+          </article>
+          <article>
+            <h3>Project Without Image</h3>
+            <p>
+              This description includes some example
+              <a
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://www.mathjax.org/"
+                >Mathjax</a
+              >, which is included with this template. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. When \(a \ne 0\),
+              there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x
+              = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Papers -->
+      <section>
+        <h2>Selected Papers</h2>
+        <div>
+          <div>
+            <!-- TODO: Add your citations  -->
+            <ol>
+              <li>
+                David N Spergel, Licia Verde, Hiranya V Peiris, Eiichiro
+                Komatsu, MR Nolta, Charles L Bennett, Mark Halpern, Gary
+                Hinshaw, Norman Jarosik, Alan Kogut, M Limon, SS Meyer, L Page,
+                GS Tucker, JL Weiland, E Wollack, EL Wright,
+                <i
+                  >First-year Wilkinson Microwave Anisotropy Probe (WMAP)*
+                  observations: determination of cosmological parameters,</i
+                >
+                The Astrophysical Journal Supplement Series, 148 (2003-9), pp.
+                175-330.
+              </li>
+              <li>
+                Komatsu, E., “Seven-year Wilkinson Microwave Anisotropy Probe
+                (WMAP) Observations: Cosmological Interpretation”,
+                <i>The Astrophysical Journal Supplement Series</i>, vol. 192,
+                no. 2, 2011. doi:10.1088/0067-0049/192/2/18.
+              </li>
+              <li>
+                Komatsu, E., “Five-Year Wilkinson Microwave Anisotropy Probe
+                Observations: Cosmological Interpretation”,
+                <i>The Astrophysical Journal Supplement Series</i>, vol. 180,
+                no. 2, pp. 330–376, 2009. doi:10.1088/0067-0049/180/2/330.
+                <!-- TODO: For PDF downloads -->
+                <a
+                  href="pdfs/fakepaper.pdf"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  >PDF</a
+                >
+              </li>
+              <li>
+                Spergel, D. N. and Steinhardt, P. J., “Observational Evidence
+                for Self-Interacting Cold Dark Matter”,
+                <i>Physical Review Letters</i>, vol. 84, no. 17, pp. 3760–3763,
+                2000. doi:10.1103/PhysRevLett.84.3760.
+                <!-- TODO: Add external links -->
+                <a href="#" rel="noreferrer noopener" target="_blank">arXiv</a>
+              </li>
+              <li>
+                Spergel, D., “Wide-Field InfrarRed Survey Telescope-Astrophysics
+                Focused Telescope Assets WFIRST-AFTA 2015 Report”,
+                <i>arXiv e-prints</i>, 2015.
+                <!-- TODO: For PDF downloads -->
+                <a
+                  href="pdfs/fakepaper.pdf"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  >PDF</a
+                >
+                <a href="#" rel="noreferrer noopener" target="_blank">DOI</a>
+              </li>
+            </ol>
+            <ul>
+              <!-- TODO: Add link to database of all papers -->
+              <li>
+                <a
+                  href="https://ui.adsabs.harvard.edu/search/filter_database_fq_database=OR&filter_database_fq_database=database:%22astronomy%22&q=author%3A(%22Spergel%22)&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&sort=score%20desc&format=SHORT&unprocessed_parameter=qform&unprocessed_parameter=Relative%20Weights&unprocessed_parameter=Use%20For%20Weighting&unprocessed_parameter=Weighted%20Scoring/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  >All Publications</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Talks -->
+      <section>
+        <h2>Talks</h2>
+        <div>
+          <div>
+            <!-- TODO: Add talks  -->
+            <ul>
+              <li>
+                <a href="#"
+                  >Illuminating the History of the Universe with the Cosmic
+                  Microwave Background</a
+                >, Presidential Lecture Series, University
+              </li>
+              <li>
+                <a href="#">Introduction to WFIRST/AFTA Mission,</a>University
+                of Something
+              </li>
+              <li><a href="#">Recent Results from ACT </a>at IPMU</li>
+              <li><a href="#">New Cosmology Talk</a>, Conference, Place</li>
+              <li>
+                My popular talk on "Taking the Universe's Baby Picture" is
+                available online at <a href="#">UCTV</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Software -->
+      <section>
+        <h2>Software</h2>
+        <!-- TODO: Add Software  -->
+        <p>I contribute to a number of open source software projects.</p>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Item One</a></td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Item Two</a></td>
+                <td>
+                  Vis sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Item Three</a></td>
+                <td>
+                  Ut sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Item Four</a></td>
+                <td>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Item Five</a></td>
+                <td>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section>
+        <h2>Contact</h2>
+        <div>
+          <div>
+            <ul>
+              <li>
+                <h3>
+                  <span>Address</span>
+                </h3>
+                <a href="http://flatironinstitute.org">Flatiron Institute</a
+                ><br />
+                162 Fifth Avenue<br />
+                New York, NY 10010<br />
+                United States
+              </li>
+              <li>
+                <!-- TODO: Add phone if you want -->
+                <h3>
+                  <span>Phone</span>
+                </h3>
+                000-000-0000
+              </li>
+              <li>
+                <h3>
+                  <span>Email</span>
+                </h3>
+                <!-- TODO: Add email -->
+                <a href="mailto:USER_EMAIL"
+                  >USER_NAME[at]flatironinstitute.org</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <!-- TODO: Add your social media handles here -->
+              <!-- Other icons are available here: https://fontawesome.com/v4.7/icons/ just change the fa-tag -->
+              <li>
+                <a href="#"><span>Twitter</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Github</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Instagram</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Facebook</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Vimeo</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
