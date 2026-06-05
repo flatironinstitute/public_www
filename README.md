@@ -53,10 +53,6 @@ If you wish to have both a thumbnail (for fast loading) and a larger image or vi
 </article>
 ```
 
-### Mathjax
-
-Mathjax 3.0 has been included as a courtesy. Feel free to delete if you are not using.
-
 ### Icons
 
 This page uses Font Awesome vector icons for social media. Additional logos can be found on the [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free) website and can be added using the `icon` and `fa-*` css classes.
