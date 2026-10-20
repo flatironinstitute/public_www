@@ -221,9 +221,10 @@ body.is-preload *:after {
 body,
 input,
 select,
+/* avoid Univers fonts and correct Arial spelling. Alex Barnett 10/20/26: */
 textarea {
   color: #666;
-  font-family: "Univers Next W01", Helvetica, Ariel, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.75em;
