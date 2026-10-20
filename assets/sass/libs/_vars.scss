@@ -17,11 +17,11 @@ $size: (
 );
 
 // Font.
+// avoid Univers fonts and correct Arial spelling. Alex Barnett 10/20/26:
 $font: (
   family: (
-    "Univers Next W01",
     Helvetica,
-    Ariel,
+    Arial,
     sans-serif,
   ),
   family-fixed: (
